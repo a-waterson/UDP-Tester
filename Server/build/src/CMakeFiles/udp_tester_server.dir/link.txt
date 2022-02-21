@@ -1,0 +1,1 @@
+/bin/clang-13 -g CMakeFiles/udp_tester_server.dir/main.c.o -o udp_tester_server   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib: -lm /usr/lib/libpthread.so /usr/lib/libcrypt.so /usr/lib/libgdbm.so /usr/lib/libgdbm_compat.so /usr/local/lib/libdc_error.so /usr/local/lib/libdc_posix.so /usr/local/lib/libdc_util.so /usr/local/lib/libdc_application.so /usr/local/lib/libconfig.so 
