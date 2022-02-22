@@ -1,0 +1,558 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "src/udp_tester_server"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_directories",
+			"target_link_libraries",
+			"target_compile_options",
+			"add_definitions",
+			"add_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -mmacosx-version-min=11.6"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-fstack-protector-all"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-ftrapv"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wformat-nonliteral"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wformat-y2k"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wnull-dereference"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Winit-self"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wmissing-include-dirs"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wswitch-default"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wswitch-enum"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wunused-local-typedefs"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wstrict-overflow=5"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wmissing-noreturn"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Walloca"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wfloat-equal"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wdeclaration-after-statement"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wabsolute-value"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wundef"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wexpansion-to-defined"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wunused-macros"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wno-endif-labels"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wbad-function-cast"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wcast-qual"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wdangling-else"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wdate-time"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wempty-body"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wsign-conversion"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wfloat-conversion"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Waggregate-return"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wstrict-prototypes"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wold-style-definition"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wmissing-prototypes"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wmissing-declarations"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wpacked"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wredundant-decls"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wnested-externs"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Winline"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Winvalid-pch"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wvariadic-macros"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wdisabled-optimization"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wstack-protector"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Woverlength-strings"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 17,
+					"define" : "_DARWIN_C_SOURCE"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "_POSIX_C_SOURCE=200809L"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "_XOPEN_SOURCE=700"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 19,
+					"path" : "/Users/aidanwaterson/Projects/UDP-Tester/Server/src/../include"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "/usr/local/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"id" : "udp_tester_server::@145eef247bfb46b6828c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-L/usr/local/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libm.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libpthread.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/usr/local/lib/libgdbm.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "/usr/local/lib/libgdbm_compat.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/local/lib/libdc_error.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/usr/local/lib/libdc_posix.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/usr/local/lib/libdc_util.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/usr/local/lib/libdc_application.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/usr/local/lib/libconfig.dylib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "udp_tester_server",
+	"nameOnDisk" : "udp_tester_server",
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tcp_connection.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/udp_socket.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test_data.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/tcp_connection.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/udp_socket.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/test_data.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

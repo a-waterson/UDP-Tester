@@ -10,7 +10,7 @@ IF(LINT)
 ENDIF()
 
 # Make an executable
-add_executable(udp_tester_server ${SOURCE_LIST} ${HEADER_LIST})
+add_executable(udp_tester_server ${MAIN_SOURCE} ${COMMON_SOURCE_LIST} ${HEADER_LIST})
 
 # We need this directory, and users of our library will need it too
 target_include_directories(udp_tester_server PRIVATE ../include)
@@ -85,5 +85,6 @@ add_custom_target(
         COMMAND clang-format
         -i
         ${HEADER_LIST}
-        ${SOURCE_LIST}
+        ${COMMON_SOURCE_LIST}
+        ${MAIN_SOURCE}
 )

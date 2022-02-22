@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.22.0/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aidanw/work/4980/UDPtester/Server
+CMAKE_SOURCE_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aidanw/work/4980/UDPtester/Server/build
+CMAKE_BINARY_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Server/build
 
 # Utility rule file for ContinuousTest.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ContinuousTest.dir/compiler_depend.make
 include CMakeFiles/ContinuousTest.dir/progress.make
 
 CMakeFiles/ContinuousTest:
-	/usr/bin/ctest -D ContinuousTest
+	/usr/local/Cellar/cmake/3.22.0/bin/ctest -D ContinuousTest
 
 ContinuousTest: CMakeFiles/ContinuousTest
 ContinuousTest: CMakeFiles/ContinuousTest.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ContinuousTest.dir/clean:
 .PHONY : CMakeFiles/ContinuousTest.dir/clean
 
 CMakeFiles/ContinuousTest.dir/depend:
-	cd /home/aidanw/work/4980/UDPtester/Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aidanw/work/4980/UDPtester/Server /home/aidanw/work/4980/UDPtester/Server /home/aidanw/work/4980/UDPtester/Server/build /home/aidanw/work/4980/UDPtester/Server/build /home/aidanw/work/4980/UDPtester/Server/build/CMakeFiles/ContinuousTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/aidanwaterson/Projects/UDP-Tester/Server /Users/aidanwaterson/Projects/UDP-Tester/Server /Users/aidanwaterson/Projects/UDP-Tester/Server/build /Users/aidanwaterson/Projects/UDP-Tester/Server/build /Users/aidanwaterson/Projects/UDP-Tester/Server/build/CMakeFiles/ContinuousTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousTest.dir/depend
 

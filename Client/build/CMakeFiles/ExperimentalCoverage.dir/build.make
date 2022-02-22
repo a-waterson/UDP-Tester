@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.22.0/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aidanw/work/4980/UDPtester/Client
+CMAKE_SOURCE_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aidanw/work/4980/UDPtester/Client/build
+CMAKE_BINARY_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Client/build
 
 # Utility rule file for ExperimentalCoverage.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ExperimentalCoverage.dir/compiler_depend.make
 include CMakeFiles/ExperimentalCoverage.dir/progress.make
 
 CMakeFiles/ExperimentalCoverage:
-	/usr/bin/ctest -D ExperimentalCoverage
+	/usr/local/Cellar/cmake/3.22.0/bin/ctest -D ExperimentalCoverage
 
 ExperimentalCoverage: CMakeFiles/ExperimentalCoverage
 ExperimentalCoverage: CMakeFiles/ExperimentalCoverage.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalCoverage.dir/clean:
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/clean
 
 CMakeFiles/ExperimentalCoverage.dir/depend:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aidanw/work/4980/UDPtester/Client /home/aidanw/work/4980/UDPtester/Client /home/aidanw/work/4980/UDPtester/Client/build /home/aidanw/work/4980/UDPtester/Client/build /home/aidanw/work/4980/UDPtester/Client/build/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/aidanwaterson/Projects/UDP-Tester/Client /Users/aidanwaterson/Projects/UDP-Tester/Client /Users/aidanwaterson/Projects/UDP-Tester/Client/build /Users/aidanwaterson/Projects/UDP-Tester/Client/build /Users/aidanwaterson/Projects/UDP-Tester/Client/build/CMakeFiles/ExperimentalCoverage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/depend
 

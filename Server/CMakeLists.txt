@@ -11,13 +11,20 @@ project(
         LANGUAGES C)
 
 set(HEADER_LIST
-        
+       "${udp_tester_server_SOURCE_DIR}/include/tcp_connection.h"
+       "${udp_tester_server_SOURCE_DIR}/include/udp_socket.h"
+       "${udp_tester_server_SOURCE_DIR}/include/test_data.h"
         )
 
-set(SOURCE_LIST
-     "${udp_tester_server_SOURCE_DIR}/src/main.c"
+set(COMMON_SOURCE_LIST
+     
+     "${udp_tester_server_SOURCE_DIR}/src/tcp_connection.c"
+     "${udp_tester_server_SOURCE_DIR}/src/udp_socket.c"
+     "${udp_tester_server_SOURCE_DIR}/src/test_data.c"
         )
-
+set(MAIN_SOURCE
+        "${udp_tester_server_SOURCE_DIR}/src/main.c"
+)
 ### Require out-of-source builds
 # this still creates a CMakeFiles directory and CMakeCache.txt- can we delete them?
 file(TO_CMAKE_PATH "${PROJECT_BINARY_DIR}/CMakeLists.txt" LOC_PATH)
@@ -43,12 +50,12 @@ if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
     include(CTest)
 
     # Docs only available if this is the main app
-    find_package(Doxygen)
-    if (Doxygen_FOUND)
-        add_subdirectory(docs)
-    else ()
-        message(STATUS "Doxygen not found, not building docs")
-    endif ()
+    # find_package(Doxygen)
+    # if (Doxygen_FOUND)
+    #     add_subdirectory(docs)
+    # else ()
+    #     message(STATUS "Doxygen not found, not building docs")
+    # endif ()
 endif ()
 
 # The compiled library code is here
@@ -59,8 +66,8 @@ add_subdirectory(src)
 
 # Testing only available if this is the main app
 # Emergency override MODERN_CMAKE_BUILD_TESTING provided as well
-if ((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR MODERN_CMAKE_BUILD_TESTING)
-        AND BUILD_TESTING)
-    # add_subdirectory(tests)
-endif ()
+# if ((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR MODERN_CMAKE_BUILD_TESTING)
+#         AND BUILD_TESTING)
+#     # add_subdirectory(tests)
+# endif ()
 

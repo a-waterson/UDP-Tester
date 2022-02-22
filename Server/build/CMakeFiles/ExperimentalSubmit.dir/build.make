@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.22.0/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aidanw/work/4980/UDPtester/Server
+CMAKE_SOURCE_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aidanw/work/4980/UDPtester/Server/build
+CMAKE_BINARY_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Server/build
 
 # Utility rule file for ExperimentalSubmit.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ExperimentalSubmit.dir/compiler_depend.make
 include CMakeFiles/ExperimentalSubmit.dir/progress.make
 
 CMakeFiles/ExperimentalSubmit:
-	/usr/bin/ctest -D ExperimentalSubmit
+	/usr/local/Cellar/cmake/3.22.0/bin/ctest -D ExperimentalSubmit
 
 ExperimentalSubmit: CMakeFiles/ExperimentalSubmit
 ExperimentalSubmit: CMakeFiles/ExperimentalSubmit.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalSubmit.dir/clean:
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/clean
 
 CMakeFiles/ExperimentalSubmit.dir/depend:
-	cd /home/aidanw/work/4980/UDPtester/Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aidanw/work/4980/UDPtester/Server /home/aidanw/work/4980/UDPtester/Server /home/aidanw/work/4980/UDPtester/Server/build /home/aidanw/work/4980/UDPtester/Server/build /home/aidanw/work/4980/UDPtester/Server/build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/aidanwaterson/Projects/UDP-Tester/Server /Users/aidanwaterson/Projects/UDP-Tester/Server /Users/aidanwaterson/Projects/UDP-Tester/Server/build /Users/aidanwaterson/Projects/UDP-Tester/Server/build /Users/aidanwaterson/Projects/UDP-Tester/Server/build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/depend
 

@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/aidanw/work/4980/UDPtester/Server
-BuildDirectory: /home/aidanw/work/4980/UDPtester/Server/build
+SourceDirectory: /Users/aidanwaterson/Projects/UDP-Tester/Server
+BuildDirectory: /Users/aidanwaterson/Projects/UDP-Tester/Server/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: aidan-ms7c02
+Site: Aidans-MBP
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-clang-13
+BuildName: Darwin-clang++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/aidanw/work/4980/UDPtester/Server"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.22.0/bin/cmake" "/Users/aidanwaterson/Projects/UDP-Tester/Server"
+MakeCommand: /usr/local/Cellar/cmake/3.22.0/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -62,7 +62,7 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: 
+Compiler: /usr/bin/clang++
 CompilerVersion: 
 
 # Dynamic analysis (MemCheck)
@@ -75,7 +75,7 @@ CudaSanitizerCommand:
 CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: /usr/bin/valgrind
+MemoryCheckCommand: /usr/local/bin/valgrind
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

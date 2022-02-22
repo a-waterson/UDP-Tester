@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.22.0/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aidanw/work/4980/UDPtester/Client
+CMAKE_SOURCE_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aidanw/work/4980/UDPtester/Client/build
+CMAKE_BINARY_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Client/build
 
 # Utility rule file for format.
 
@@ -67,7 +67,7 @@ include src/CMakeFiles/format.dir/compiler_depend.make
 include src/CMakeFiles/format.dir/progress.make
 
 src/CMakeFiles/format:
-	cd /home/aidanw/work/4980/UDPtester/Client/build/src && clang-format -i /home/aidanw/work/4980/UDPtester/Client/include/tcp_connection.h /home/aidanw/work/4980/UDPtester/Client/include/udp_socket.h /home/aidanw/work/4980/UDPtester/Client/include/test_data.h /home/aidanw/work/4980/UDPtester/Client/src/tcp_connection.c /home/aidanw/work/4980/UDPtester/Client/src/udp_socket.c /home/aidanw/work/4980/UDPtester/Client/src/test_data.c /home/aidanw/work/4980/UDPtester/Client/src/main.c
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build/src && clang-format -i /Users/aidanwaterson/Projects/UDP-Tester/Client/include/tcp_connection.h /Users/aidanwaterson/Projects/UDP-Tester/Client/include/udp_socket.h /Users/aidanwaterson/Projects/UDP-Tester/Client/include/test_data.h /Users/aidanwaterson/Projects/UDP-Tester/Client/src/tcp_connection.c /Users/aidanwaterson/Projects/UDP-Tester/Client/src/udp_socket.c /Users/aidanwaterson/Projects/UDP-Tester/Client/src/test_data.c /Users/aidanwaterson/Projects/UDP-Tester/Client/src/main.c
 
 format: src/CMakeFiles/format
 format: src/CMakeFiles/format.dir/build.make
@@ -78,10 +78,10 @@ src/CMakeFiles/format.dir/build: format
 .PHONY : src/CMakeFiles/format.dir/build
 
 src/CMakeFiles/format.dir/clean:
-	cd /home/aidanw/work/4980/UDPtester/Client/build/src && $(CMAKE_COMMAND) -P CMakeFiles/format.dir/cmake_clean.cmake
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build/src && $(CMAKE_COMMAND) -P CMakeFiles/format.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/format.dir/clean
 
 src/CMakeFiles/format.dir/depend:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aidanw/work/4980/UDPtester/Client /home/aidanw/work/4980/UDPtester/Client/src /home/aidanw/work/4980/UDPtester/Client/build /home/aidanw/work/4980/UDPtester/Client/build/src /home/aidanw/work/4980/UDPtester/Client/build/src/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/aidanwaterson/Projects/UDP-Tester/Client /Users/aidanwaterson/Projects/UDP-Tester/Client/src /Users/aidanwaterson/Projects/UDP-Tester/Client/build /Users/aidanwaterson/Projects/UDP-Tester/Client/build/src /Users/aidanwaterson/Projects/UDP-Tester/Client/build/src/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/format.dir/depend
 

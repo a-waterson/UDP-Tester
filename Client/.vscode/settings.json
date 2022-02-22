@@ -1,8 +1,6 @@
 {
     "files.associations": {
-        "errno.h": "c",
-        "types.h": "c",
-        "tcp_connection.h": "c",
-        "string.h": "c"
+        "lab2": "java",
+        "tcp_connection.h": "c"
     }
 }

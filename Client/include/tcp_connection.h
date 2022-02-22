@@ -6,11 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
-/**
- * @brief
- * initlializes a TCP socket
- *
- */
+
 #define ISVALIDSOCKET(s) ((s) >= 0)
 #define SOCKET int
 #define INVALID_SOCKET 2
@@ -18,11 +14,11 @@
 struct connection_info
 {
     SOCKET socket;
-    char *port;
-    char *hostname;
+    char port[16];
+    char hostname[16];
 };
 int init_tcp_conn(struct addrinfo *hints, struct addrinfo *peer_addr,
-                  struct connection_info *data);
+                  struct connection_info *data, const char *hostname, const char *port);
 /**
  * @brief
  * connects to the TCP server

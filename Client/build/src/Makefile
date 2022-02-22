@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.22.0/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aidanw/work/4980/UDPtester/Client
+CMAKE_SOURCE_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aidanw/work/4980/UDPtester/Client/build
+CMAKE_BINARY_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Client/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/aidanw/work/4980/UDPtester/Client/build
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+	/usr/local/Cellar/cmake/3.22.0/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -78,7 +78,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.22.0/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.22.0/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -107,49 +107,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.22.0/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.22.0/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.22.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.22.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.22.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.22.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aidanw/work/4980/UDPtester/Client/build/CMakeFiles /home/aidanw/work/4980/UDPtester/Client/build/src//CMakeFiles/progress.marks
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aidanw/work/4980/UDPtester/Client/build/CMakeFiles 0
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/aidanwaterson/Projects/UDP-Tester/Client/build/CMakeFiles /Users/aidanwaterson/Projects/UDP-Tester/Client/build/src//CMakeFiles/progress.marks
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aidanwaterson/Projects/UDP-Tester/Client/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/udp_tester_client.dir/rule:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/udp_tester_client.dir/rule
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/udp_tester_client.dir/rule
 .PHONY : src/CMakeFiles/udp_tester_client.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ udp_tester_client: src/CMakeFiles/udp_tester_client.dir/rule
 
 # fast build rule for target.
 udp_tester_client/fast:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/build
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/build
 .PHONY : udp_tester_client/fast
 
 # Convenience name for target.
 src/CMakeFiles/format.dir/rule:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/format.dir/rule
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/format.dir/rule
 .PHONY : src/CMakeFiles/format.dir/rule
 
 # Convenience name for target.
@@ -196,7 +196,7 @@ format: src/CMakeFiles/format.dir/rule
 
 # fast build rule for target.
 format/fast:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/format.dir/build.make src/CMakeFiles/format.dir/build
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/format.dir/build.make src/CMakeFiles/format.dir/build
 .PHONY : format/fast
 
 main.o: main.c.o
@@ -204,7 +204,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/main.c.o
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -212,7 +212,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/main.c.i
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -220,7 +220,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/main.c.s
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/main.c.s
 .PHONY : main.c.s
 
 tcp_connection.o: tcp_connection.c.o
@@ -228,7 +228,7 @@ tcp_connection.o: tcp_connection.c.o
 
 # target to build an object file
 tcp_connection.c.o:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/tcp_connection.c.o
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/tcp_connection.c.o
 .PHONY : tcp_connection.c.o
 
 tcp_connection.i: tcp_connection.c.i
@@ -236,7 +236,7 @@ tcp_connection.i: tcp_connection.c.i
 
 # target to preprocess a source file
 tcp_connection.c.i:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/tcp_connection.c.i
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/tcp_connection.c.i
 .PHONY : tcp_connection.c.i
 
 tcp_connection.s: tcp_connection.c.s
@@ -244,7 +244,7 @@ tcp_connection.s: tcp_connection.c.s
 
 # target to generate assembly for a file
 tcp_connection.c.s:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/tcp_connection.c.s
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/tcp_connection.c.s
 .PHONY : tcp_connection.c.s
 
 test_data.o: test_data.c.o
@@ -252,7 +252,7 @@ test_data.o: test_data.c.o
 
 # target to build an object file
 test_data.c.o:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/test_data.c.o
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/test_data.c.o
 .PHONY : test_data.c.o
 
 test_data.i: test_data.c.i
@@ -260,7 +260,7 @@ test_data.i: test_data.c.i
 
 # target to preprocess a source file
 test_data.c.i:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/test_data.c.i
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/test_data.c.i
 .PHONY : test_data.c.i
 
 test_data.s: test_data.c.s
@@ -268,7 +268,7 @@ test_data.s: test_data.c.s
 
 # target to generate assembly for a file
 test_data.c.s:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/test_data.c.s
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/test_data.c.s
 .PHONY : test_data.c.s
 
 udp_socket.o: udp_socket.c.o
@@ -276,7 +276,7 @@ udp_socket.o: udp_socket.c.o
 
 # target to build an object file
 udp_socket.c.o:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/udp_socket.c.o
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/udp_socket.c.o
 .PHONY : udp_socket.c.o
 
 udp_socket.i: udp_socket.c.i
@@ -284,7 +284,7 @@ udp_socket.i: udp_socket.c.i
 
 # target to preprocess a source file
 udp_socket.c.i:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/udp_socket.c.i
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/udp_socket.c.i
 .PHONY : udp_socket.c.i
 
 udp_socket.s: udp_socket.c.s
@@ -292,7 +292,7 @@ udp_socket.s: udp_socket.c.s
 
 # target to generate assembly for a file
 udp_socket.c.s:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/udp_socket.c.s
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/udp_tester_client.dir/build.make src/CMakeFiles/udp_tester_client.dir/udp_socket.c.s
 .PHONY : udp_socket.c.s
 
 # Help Target
@@ -333,6 +333,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/aidanw/work/4980/UDPtester/Client/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Client/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

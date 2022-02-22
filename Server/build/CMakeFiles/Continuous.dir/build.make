@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.22.0/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aidanw/work/4980/UDPtester/Server
+CMAKE_SOURCE_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aidanw/work/4980/UDPtester/Server/build
+CMAKE_BINARY_DIR = /Users/aidanwaterson/Projects/UDP-Tester/Server/build
 
 # Utility rule file for Continuous.
 
@@ -67,7 +67,7 @@ include CMakeFiles/Continuous.dir/compiler_depend.make
 include CMakeFiles/Continuous.dir/progress.make
 
 CMakeFiles/Continuous:
-	/usr/bin/ctest -D Continuous
+	/usr/local/Cellar/cmake/3.22.0/bin/ctest -D Continuous
 
 Continuous: CMakeFiles/Continuous
 Continuous: CMakeFiles/Continuous.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/Continuous.dir/clean:
 .PHONY : CMakeFiles/Continuous.dir/clean
 
 CMakeFiles/Continuous.dir/depend:
-	cd /home/aidanw/work/4980/UDPtester/Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aidanw/work/4980/UDPtester/Server /home/aidanw/work/4980/UDPtester/Server /home/aidanw/work/4980/UDPtester/Server/build /home/aidanw/work/4980/UDPtester/Server/build /home/aidanw/work/4980/UDPtester/Server/build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/aidanwaterson/Projects/UDP-Tester/Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/aidanwaterson/Projects/UDP-Tester/Server /Users/aidanwaterson/Projects/UDP-Tester/Server /Users/aidanwaterson/Projects/UDP-Tester/Server/build /Users/aidanwaterson/Projects/UDP-Tester/Server/build /Users/aidanwaterson/Projects/UDP-Tester/Server/build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Continuous.dir/depend
 

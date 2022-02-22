@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/aidanw/work/4980/UDPtester/Client
-# Build directory: /home/aidanw/work/4980/UDPtester/Client/build
+# Source directory: /Users/aidanwaterson/Projects/UDP-Tester/Client
+# Build directory: /Users/aidanwaterson/Projects/UDP-Tester/Client/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
