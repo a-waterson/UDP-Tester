@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "lab2": "java",
+        "time.h": "c",
         "tcp_connection.h": "c"
     }
 }

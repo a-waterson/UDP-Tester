@@ -1,6 +1,7 @@
 #ifndef UDP_TESTER_CONNECTION
 #define UDP_TESTER_CONNECTION
 #include <arpa/inet.h>
+#include <ctype.h>
 #include <errno.h>
 #include <netdb.h>
 #include <netinet/in.h>
@@ -14,7 +15,6 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <ctype.h>
 
 #define ISVALIDSOCKET(s) ((s) >= 0)
 #define SOCKET int
@@ -31,5 +31,5 @@ struct connection_info
     SOCKET bind_socket;
 };
 int init_tcp_conn(char *port);
-int connect_to_clients(SOCKET bind_socket, int max_sockets);
+int connect_to_clients(SOCKET socket_listen, int max_sockets, char *argv[]);
 #endif

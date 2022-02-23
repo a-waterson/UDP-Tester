@@ -2,13 +2,15 @@
 
 #include "tcp_connection.h"
 
-int init_tcp_conn(struct addrinfo *hints, struct addrinfo *peer_addr,
-                  struct connection_info *data, const char *hostname, const char *port)
+int init_tcp_conn(struct addrinfo *peer_addr, struct connection_info *data,
+                  const char *hostname, const char *port)
 {
-    memset(hints, 0, sizeof(&hints));
-    hints->ai_socktype = SOCK_STREAM;
+    struct addrinfo hints;
 
-    if (getaddrinfo(hostname, port, hints, &peer_addr))
+    memset(&hints, 0, sizeof(hints));
+    hints.ai_socktype = SOCK_STREAM;
+
+    if (getaddrinfo(hostname, port, &hints, &peer_addr))
     {
         fprintf(stderr, "getaddrinfo() failed. (%d)\n", GETSOCKETERRNO());
         return 1;
@@ -30,12 +32,10 @@ int init_tcp_conn(struct addrinfo *hints, struct addrinfo *peer_addr,
 }
 int connect_to_server(struct addrinfo *peer_addr, struct connection_info *data)
 {
-
     return 0;
 }
 int read_from_socket(struct connection_info *data, char *read)
 {
-    char bread[4096];
-    recv(data->socket, bread, 4096, 0);
-    printf("%s\n", bread);
+    char bread[50];
+    recv(data->socket, read, 50, 0);
 }

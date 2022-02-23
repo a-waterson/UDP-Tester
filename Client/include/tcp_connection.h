@@ -17,8 +17,8 @@ struct connection_info
     char port[16];
     char hostname[16];
 };
-int init_tcp_conn(struct addrinfo *hints, struct addrinfo *peer_addr,
-                  struct connection_info *data, const char *hostname, const char *port);
+int init_tcp_conn(struct addrinfo *peer_addr, struct connection_info *data,
+                  const char *hostname, const char *port);
 /**
  * @brief
  * connects to the TCP server
